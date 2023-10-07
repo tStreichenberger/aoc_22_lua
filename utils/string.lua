@@ -9,7 +9,7 @@ Mod.lines = Utils.lines
 
 ---returns an iterator over the chars in a string
 ---@param string string
----@return fun():string, ...unknown
+---@return fun():string
 function Mod.chars(string)
     return string.gmatch(string, ".")
 end
@@ -17,7 +17,7 @@ end
 ---split string on given char or string. Returns an iterator over these splits
 ---@param string string
 ---@param char string
----@return fun(): string, ...unknown
+---@return fun(): string
 function Mod.split(string, char)
     return string:gmatch(string.format("[^%s]+", char))
 end

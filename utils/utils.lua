@@ -121,4 +121,18 @@ function Mod.map(array, func)
     return output
 end
 
+---@generic T
+---@param a1 T[]
+---@param a2 T[]
+---@return T[]
+function Mod.concat(a1, a2)
+    local new_a = {}
+    for _, a in ipairs {a1,a2} do 
+        for _, v in ipairs(a) do
+            table.insert(new_a, v)
+        end
+    end
+    return new_a
+end
+
 return Mod
