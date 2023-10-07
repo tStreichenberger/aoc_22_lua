@@ -1,0 +1,9 @@
+{
+    "name": "Lua Ops Addon",
+    "settings": {
+        "Lua.hint.setType": true,
+        "Lua.hint.enable": true,
+        "Lua.runtime.version": "LuaJIT",
+        "Lua.semantic.enable": false
+    }
+}
